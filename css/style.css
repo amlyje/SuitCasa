@@ -57,7 +57,7 @@ header button:hover {
 }
 
 section.background {
-    background-image: url("img/baggrund.jpeg");
+    background-image: url("../img/baggrund.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

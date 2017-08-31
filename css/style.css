@@ -1,11 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
-
 /////////////////////////////////
 
 /*Defaults*/
 
 /////////////////////////////////
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
     background-color: black;
 }
@@ -34,7 +38,7 @@ header {
     padding: 10px 20px 10px 10px;
 }
 
-button {
+header button {
     color: black;
     padding: 5px;
     font-size: 0.8em;
@@ -45,7 +49,7 @@ button {
     transition: color 0.3s ease;
 }
 
-&:hover {
+header button:hover {
     cursor: pointer;
     background-color: transparent;
     color: white;
@@ -82,7 +86,7 @@ h1.fp {
     margin: 3% 0 0;
 }
 
-button {
+.frontpage-buttons button {
     padding: 20px;
     margin: 5px 20px;
     border-radius: 175px;
@@ -93,7 +97,7 @@ button {
     text-transform: uppercase;
 }
 
-&:hover {
+.frontpage-buttons button:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, .5);
     color: white;

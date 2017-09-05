@@ -12,7 +12,7 @@
 <a href="index.php"><h1 class="fp">SuitCasa</h1></a>
 <section class="login">
     <input type="text" name="username" value="" placeholder="username">
-    <input type="text" name="password" value="" placeholder="password">
+    <input type="password" name="password" value="" placeholder="password">
     <button type="button" name="login">login</button>
 </section>
 

@@ -12,7 +12,7 @@
 <a href="index.php"><h1 class="fp">SuitCasa</h1></a>
 <section class="sign-up">
     <input type="text" name="username" value="" placeholder="Name">
-    <input type="text" name="password" value="" placeholder="Password">
+    <input type="password" name="password" value="" placeholder="Password">
     <input type="email" name="email" value="" placeholder="Email">
     <button type="button" name="login">Click here to sign up!</button>
 </section>

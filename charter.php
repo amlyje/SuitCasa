@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Packing List - Charter Travel</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  </head>
+<?php include 'inc/head.inc.php'; ?>
+    <link rel="stylesheet" href="css/charter.css">
   <body>
     <header id="header">
       <h1>Packing List - Charter Travel</h1>
       <nav>
+        <a href="index.php"><img src="img/back.png"><p>Back</p></a>
+      <article id="menu">
         <figure><img src="img/plus.png"><p>Add <br>new</p></figure>
         <figure v-on:click="print"><img src="img/print.png"><p>Print</p></figure>
         <figure><img src="img/share.png"><p>Share</p></figure>
+      <article>
       </nav>
     </header>
 <main>
@@ -109,7 +105,7 @@
   </article>
 </main>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="js/checklist.js"></script>
-    <script src="js/newlist.js"></script>
+    <script src="js/charter-checklist.js"></script>
+    <script src="js/charter-newlist.js"></script>
   </body>
 </html>

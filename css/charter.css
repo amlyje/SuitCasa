@@ -31,6 +31,12 @@ nav figure {
   padding: 20px 0;
 }
 
+nav a, nav a img{
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+}
+
 figure:hover {
   opacity: 0.8;
   border-top: 1px solid lightgrey;
@@ -42,7 +48,10 @@ nav img {
   width: 25px;
   display: block;
   margin: 0 auto;
+}
 
+#menu {
+  padding-top: 50px;
 }
 
 h1, h2 {

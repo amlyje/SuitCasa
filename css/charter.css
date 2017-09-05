@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+nav {
+  background-color: white;
+  width: 80px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  font-family: 'raleway';
+  font-weight: 200;
+  border: 1px solid lightgrey;
+}
+
+nav figure {
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+figure:hover {
+  opacity: 0.8;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  background-color: #f2f2f2;
+}
+
+nav img {
+  width: 25px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+h1, h2 {
+  font-family: 'raleway';
+  font-weight: 200;
+  text-align: center;
+}
+
+h1 {
+  margin: 50px;
+}
+
+.list-elements {
+  width: 25%;
+  margin: 2%;
+  padding: 50px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  min-height: 450px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+}
+
+.list-elements h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.list-elements img {
+  width: 40px;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  font-family: 'raleway';
+  font-weight: 200;
+}
+
+li:hover {
+  background-color: rgba(220, 220, 220, 0.1);
+  border: solid 1px rgba(220, 220, 220, 0.3);
+  padding: 15px;
+  margin-left: -5px;
+  width: 90%;
+}
+
+button.delete {
+  color: #DC143C;
+  transition: color 0.2s ease-out;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  display: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+li:hover .delete {
+  display: block;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.8; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.8; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.8; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.8; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.8; }
+}
+
+input.textbox {
+  margin-top: 30px;
+  padding: 6px 4px;
+  width: 90%;
+  text-align: center;
+  bottom: 10px;
+  margin-left: -4px;
+}
+
+input.checkbox {
+  margin: 2px 20px 2px -10px;
+}
+
+.checkbox {
+  font-size: 20px;
+}
+
+input.headings {
+  width: 100%;
+  font-size: 24px;
+  border: none;
+  font-family: 'raleway';
+  font-weight: 200;
+  text-align: center;
+}
+
+li.done label {
+  text-decoration: line-through;
+}
+
+.list-enter-active, .list-leave-active {
+  transition: all 0.5s;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateX(10px);
+}

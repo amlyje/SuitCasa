@@ -52,7 +52,7 @@ nav img {
 
 nav p {
   font-size: 13px;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 #menu {
@@ -199,4 +199,30 @@ li.done label {
 .list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
   opacity: 0;
   transform: translateX(10px);
+}
+
+@media print {
+  header nav, footer {
+    display: none;}
+
+  input.textbox {
+    display: none;}
+
+  li {
+    margin: 0;
+    padding: 2px;}
+
+  #pakkelise {
+    display: flex;
+    float: left;}
+
+  .list-elements {
+    width: 40%;
+    margin: 0px 10px;
+    height: auto;
+    display: inline-block;
+    padding: 0;}
+
+@page {
+  margin: 0.5cm;}
 }

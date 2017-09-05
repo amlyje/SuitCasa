@@ -104,7 +104,7 @@
       </section>
   </article>
 </main>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <?php include 'inc/footer.inc.php'; ?>
     <script src="js/charter-checklist.js"></script>
     <script src="js/charter-newlist.js"></script>
   </body>

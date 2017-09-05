@@ -20,7 +20,7 @@
 <section class="frontpage-buttons">
     <a href="createnew.php"><button class="dropbtn" type="button" name="Opret pakkeliste">Create your own list</button></a>
     <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <button onclick="myFunction()" class="dropbtn">Inspire me!</button>
         <div id="myDropdown" class="dropdown-content">
             <a href="city.php">City Holiday</a>
             <a href="charter.php">Charter</a>

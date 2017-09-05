@@ -1,7 +1,7 @@
 // JavaScript Document
 
 new Vue({
-  el: "#pakkeliste",
+  el: "#ski-pakkeliste",
   data: {
     newTask_basics: "",
     newTask_documents: "",

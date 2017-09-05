@@ -126,16 +126,16 @@ h1.fp:hover {
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: transparent;
     color: white;
     padding: 16px;
     font-size: 16px;
-    border: none;
+    border: 1px solid;
     cursor: pointer;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: rgba(255,255,255,.4);
 }
 
 .dropdown {

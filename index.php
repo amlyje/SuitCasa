@@ -18,14 +18,13 @@
     <p>Get inspiration for your next travel packing list and create, save and share your own.</p>
 </section>
 <section class="frontpage-buttons">
-    <a href="#"><button class="dropbtn" type="button" name="Opret pakkeliste">Create your own list</button></a>
+    <a href="createnew.php"><button class="dropbtn" type="button" name="Opret pakkeliste">Create your own list</button></a>
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Dropdown</button>
         <div id="myDropdown" class="dropdown-content">
-            <a href="#">Kategori 1 - Amalie</a>
-            <a href="charter.php">Charter - Amanda</a>
-            <a href="#">Kategori 3 - Søren</a>
-            <a href="skiing.php">Skiing - Carsten</a>
+            <a href="city.php">City Holiday</a>
+            <a href="charter.php">Charter</a>
+            <a href="skiing.php">Skiing</a>
         </div>
     </div>
 </section>

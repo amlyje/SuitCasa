@@ -1,19 +1,34 @@
 <?php include 'inc/head.inc.php'; ?>
 
-    <header>
-      <button type="button" name="Login">Login</button>
-      <button type="button" name="Sign-up">Sign up</button>
-    </header>
+<!-- FORSLAG TIL MERE -->
+<!-- 1. Autocomplete -->
+<!-- 2. Add new list -->
 
-    <h1 class="fp">SuitCasa</h1>
-    <section class="intro">
-      <p>Get inspiration for your next travel packing list and create, save and share your own.</p>
-    </section>
-    <section class="frontpage-buttons">
-      <a href="pakkeliste.html"><button type="button" name="Opret pakkeliste">Opret pakkeliste</button></a>
-      <a href="#"><button type="button" name="Find inspiration">Find inspiration</button></a>
-    </section>
-    <section class="background"></section>
+<header>
+    <a href="index.php" class="back"></a>
+    <div class="login_buttons">
+        <a href="login.php"><button type="button" name="Login">Login</button></a>
+        <a href="sign-up.php"><button type="button" name="Sign-up">Sign up</button></a>
+    </div>
+</header>
+
+<a href="index.php"><h1 class="fp">SuitCasa</h1></a>
+<section class="intro">
+    <p>Get inspiration for your next travel packing list and create, save and share your own.</p>
+</section>
+<section class="frontpage-buttons">
+    <a href="#"><button class="dropbtn" type="button" name="Opret pakkeliste">Create your own list</button></a>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Kategori 1 - Amalie</a>
+            <a href="#">Kategori 2 - Amanda</a>
+            <a href="#">Kategori 3 - Søren</a>
+            <a href="skiing.php">Skiing - Carsten</a>
+        </div>
+    </div>
+</section>
+<section class="background"></section>
 
 
 <?php include 'inc/footer.inc.php'; ?>

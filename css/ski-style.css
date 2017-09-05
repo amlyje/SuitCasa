@@ -1,3 +1,4 @@
+
 /*///////////////////////////////////////
 Defaults
 /////////////////////////////////////////*/
@@ -264,7 +265,7 @@ section.background_ski {
 .list-enter-active, .list-leave-active {
   transition: opacity .4s, transform .4s, background-color .2s !important;
 }
-.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+.list-enter, .list-leave-to, .list-leave-active  /* .list-leave-active below version 2.1.8 */ {
   opacity: 0 !important;
   transform: translateX(10px) !important;
   background-color: rgba(255,0,0,.8) !important;

@@ -1,4 +1,5 @@
 <?php include 'inc/head.inc.php'; ?>
+<link rel="stylesheet" href="css/style.css"> <!-- forside, login og signup -->
 
 <!-- FORSLAG TIL MERE -->
 <!-- 1. Autocomplete -->

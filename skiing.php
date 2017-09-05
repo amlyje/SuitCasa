@@ -104,4 +104,5 @@
 </section>
 
 
+<script src="js/ski-script.js"></script>
 <?php include 'inc/footer.inc.php'; ?>

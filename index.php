@@ -32,4 +32,5 @@
 <section class="background"></section>
 
 
+<script src="js/frontpage.js" charset="utf-8"></script>
 <?php include 'inc/footer.inc.php'; ?>

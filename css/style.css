@@ -182,6 +182,7 @@ Login page
   border: none;
   padding: 10px;
   margin: 5px 0;
+  color: black;
 }
 
 .login button, .sign-up button {

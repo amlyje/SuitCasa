@@ -23,7 +23,7 @@
         <button onclick="myFunction()" class="dropbtn">Dropdown</button>
         <div id="myDropdown" class="dropdown-content">
             <a href="#">Kategori 1 - Amalie</a>
-            <a href="#">Kategori 2 - Amanda</a>
+            <a href="charter.php">Charter - Amanda</a>
             <a href="#">Kategori 3 - Søren</a>
             <a href="skiing.php">Skiing - Carsten</a>
         </div>

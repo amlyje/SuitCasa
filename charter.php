@@ -6,7 +6,7 @@
       <nav>
         <a href="index.php"><img src="img/back.png"><p>Back</p></a>
       <article id="menu">
-        <figure><img src="img/plus.png"><p>Add <br>new</p></figure>
+        <figure><img src="img/plus.png"><p>Add new</p></figure>
         <figure v-on:click="print"><img src="img/print.png"><p>Print</p></figure>
         <figure><img src="img/share.png"><p>Share</p></figure>
       <article>

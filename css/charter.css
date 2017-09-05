@@ -50,6 +50,11 @@ nav img {
   margin: 0 auto;
 }
 
+nav p {
+  font-size: 13px;
+  margin-top: 10px; 
+}
+
 #menu {
   padding-top: 50px;
 }
@@ -62,7 +67,7 @@ h1, h2 {
 
 h1 {
   margin: 50px;
-  font-size:30px; 
+  font-size:30px;
 }
 
 .list-elements {

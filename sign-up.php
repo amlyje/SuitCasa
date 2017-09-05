@@ -1,4 +1,5 @@
 <?php include 'inc/head.inc.php'; ?>
+<link rel="stylesheet" href="css/style.css"> <!-- forside, login og signup -->
 
 <header>
     <a href="index.php" class="back">Back to Frontpage</a>

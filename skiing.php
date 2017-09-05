@@ -1,4 +1,5 @@
 <?php include 'inc/head.inc.php'; ?>
+<link rel="stylesheet" href="css/ski-style.css">
 
 <header>
     <a href="index.php" class="back">Back to Frontpage</a>
@@ -12,7 +13,7 @@
     <input type="text" autofocus value="Sample Title For Your Skiing Inspired List" onfocus="var temp_value=this.value; this.value=''; this.value=temp_value" />
 </div>
 
-<section class="full-container" id="pakkeliste">
+<section class="full-container" id="ski-pakkeliste">
 
     <section class="col-1"> <!-- First Row -->
         <section id="todo"> <!-- First list -->

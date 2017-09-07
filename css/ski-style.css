@@ -4,14 +4,8 @@ Defaults
 /////////////////////////////////////////*/
 
 
-#ski-pakkeliste-wrapper button, #ski-pakkeliste-wrapper h2, #ski-pakkeliste-wrapper h3, #ski-pakkeliste-wrapper h4, #ski-pakkeliste-wrapper p, #ski-pakkeliste-wrapper input, #ski-pakkeliste-wrapper li {
-    font-family: 'Raleway';
-    color: white;
-}
-
-#ski-pakkeliste-wrapper h1 {
-    font-family: 'Pacifico';
-    color: white;
+#ski-pakkeliste-wrapper h1, #ski-pakkeliste-wrapper h2 {
+  color: white;
 }
 
 #ski-pakkeliste-wrapper button:focus, #ski-pakkeliste-wrapper input:focus {
@@ -110,6 +104,7 @@ INSPIRATIONAL - SKI - CARSTEN
   text-align: center;
   font-family: Pacifico;
   width: 100%;
+    color: white;
 }
 
 #todo, #todo2, #todo3, #todo4 {
@@ -118,6 +113,8 @@ INSPIRATIONAL - SKI - CARSTEN
   flex-direction: column;
   position: relative;
   margin-bottom: 30px;
+  font-family: 'Raleway';
+
 }
 
 .shadow {
@@ -148,6 +145,7 @@ INSPIRATIONAL - SKI - CARSTEN
   margin: 0 28px 0 28px;
   border-bottom: 2px solid white;
   font-size: 1em;
+  font-family: 'Raleway';
 }
 
 .panel input.input::-webkit-input-placeholder { /* Chrome */

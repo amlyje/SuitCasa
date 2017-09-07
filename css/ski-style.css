@@ -3,64 +3,51 @@
 Defaults
 /////////////////////////////////////////*/
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-html {
-    background-color: black;
-}
-
-button, h2, h3, h4, p, input, li {
+#ski-pakkeliste-wrapper button, #ski-pakkeliste-wrapper h2, #ski-pakkeliste-wrapper h3, #ski-pakkeliste-wrapper h4, #ski-pakkeliste-wrapper p, #ski-pakkeliste-wrapper input, #ski-pakkeliste-wrapper li {
     font-family: 'Raleway';
     color: white;
 }
 
-h1 {
+#ski-pakkeliste-wrapper h1 {
     font-family: 'Pacifico';
     color: white;
 }
 
-button:focus, input:focus {
+#ski-pakkeliste-wrapper button:focus, #ski-pakkeliste-wrapper input:focus {
     outline: none;
 }
 
-a {
+#ski-pakkeliste-wrapper a {
   cursor: pointer;
   text-decoration: none;
 }
 
-body {
+#ski-pakkeliste-wrapper {
   overflow-x: hidden;
 }
 
-
-header {
+#ski-pakkeliste-wrapper header {
     text-align: right;
     padding: 10px 20px 10px 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.back {
+#ski-pakkeliste-wrapper .back {
   text-decoration: none;
   color: white;
   font-family: 'Raleway';
   transition: all 1s ease;
 }
 
-.back:hover {
+#ski-pakkeliste-wrapper .back:hover {
   cursor: pointer;
   margin-left: 2px;
   text-decoration: underline;
 }
 
-header button {
+#ski-pakkeliste-wrapper header button {
     color: black;
     padding: 5px;
     font-size: 0.8em;
@@ -71,7 +58,7 @@ header button {
     transition: color 0.3s ease;
 }
 
-header button:hover {
+#ski-pakkeliste-wrapper header button:hover {
     cursor: pointer;
     background-color: transparent;
     color: white;
@@ -89,7 +76,7 @@ INSPIRATIONAL - SKI - CARSTEN
   z-index: 99;
 }
 
-.full-container {
+.ca-full-container {
   display: flex;
   flex-direction: row;
   margin-bottom: 100px;
@@ -109,14 +96,14 @@ INSPIRATIONAL - SKI - CARSTEN
   margin-left: 5%;
 }
 
-.list_name {
+.ca-list_name {
   font-size: 2em;
   grid-area: list_name;
   text-align:center;
   padding: 50px 0;
 }
 
-.list_name input {
+.ca-list_name input {
   background: transparent;
   border: none;
   font-size: 1.5em;
@@ -147,13 +134,13 @@ INSPIRATIONAL - SKI - CARSTEN
   display: flex;
   flex-direction: row;
   background-color: rgba(255, 255, 255, 0.40);
-  padding: 20px 13px 20px 20px;
+  padding: 20px 27px 20px 20px;
   justify-content: space-between;
   margin-top: -10px;
 }
 
 .panel input.input {
-  padding: 14px 14px 4px 14px;
+  padding: 14px 14px 4px 25px;
   width: 330px;
   background: transparent;
   border: none;
@@ -176,15 +163,14 @@ INSPIRATIONAL - SKI - CARSTEN
   color: rgba(0,0,0,.4);
 }
 
-.list {
+.ca-list {
   display: flex;
   flex-direction: column;
 }
 
-.list li {
+.ca-list li {
   background-color: rgba(220,220,220,0.6);
   padding: 12px;
-  display: flex;
   justify-content: space-between;
   margin: 1px 0;
   align-items: center;
@@ -192,53 +178,47 @@ INSPIRATIONAL - SKI - CARSTEN
   transition: background-color .5s ease;
 }
 
-.list li:nth-child(odd) {
+.ca-list li label {
+  margin-left: 8%;
+}
+
+.ca-list li:nth-child(odd) {
   background-color: rgba(220,220,220,0.7);
 }
 
-.list li.done label {
+.ca-list li.done label {
   text-decoration: line-through;
 }
 
-.list li.done {
+.ca-list li.done {
   background-color: rgba(50,205,50,0.8);
 }
 
-.list li button, .panel button {
+.ca-list li button, .panel button {
   padding: 5px;
 }
 
-.delete_all, .delete {
+.ca-delete_all, .ca-delete {
   align-self: center;
   margin-right: 12px;
   transition: all .4s ease;
+  opacity: 0.5;
+  position: absolute;
+  right: 3px;
 }
 
-.delete:hover, .delete_all:hover {
-  opacity: 0.5;
+.ca-delete:hover, .ca-delete_all:hover {
+  opacity: 1;
   cursor: pointer;
 }
 
-.check-all {
-  align-self: center;
-  font-size: 0.7em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.check-all p {
-  margin-bottom: 5px;
-  width: 50px;
-}
-
-.checkbox {
-  margin-left: 26px;
+.ca-checkbox {
+  margin-left: 13px;
   align-self: center;
   transition: all .5s ease;
 }
 
-.checkbox:hover {
+.ca-checkbox:hover {
   cursor:pointer;
   -webkit-box-shadow: inset 0px 0px 39px -20px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px 0px 39px -20px rgba(0,0,0,0.75);
@@ -262,10 +242,10 @@ section.background_ski {
     filter: blur(7px);
 }
 
-.list-enter-active, .list-leave-active {
+.ca-list .list-enter-active, .ca-list .list-leave-active {
   transition: opacity .4s, transform .4s, background-color .2s !important;
 }
-.list-enter, .list-leave-to, .list-leave-active  /* .list-leave-active below version 2.1.8 */ {
+.ca-list .list-enter, .ca-list .list-leave-to, .ca-list .list-leave-active  /* .list-leave-active below version 2.1.8 */ {
   opacity: 0 !important;
   transform: translateX(10px) !important;
   background-color: rgba(255,0,0,.8) !important;

@@ -86,7 +86,7 @@ new Vue({
     addTask_documents: function() {
       var task = this.newTask_documents.trim();
       if (task) {
-        this.taskList_documents.unshift({
+        this.taskList_documents.unshift({ //Unshift instead of Push, so item will appear in the top of the list
           text: task,
           checked: false
         });

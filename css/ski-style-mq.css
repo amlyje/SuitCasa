@@ -1,0 +1,19 @@
+@media (max-width: 1075px) {
+  #ski-pakkeliste-wrapper {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #ski-pakkeliste-wrapper {
+    max-width: 100vw;
+  }
+  .ca-full-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ca-full-container .col-2, .ca-full-container .col-1 {
+    margin-left: 0;
+  }
+
+}

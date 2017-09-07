@@ -4,12 +4,12 @@ Defaults
 /////////////////////////////////////////*/
 
 
-#ski-pakkeliste-wrapper button, #ski-pakkeliste-wrapper h2, #ski-pakkeliste-wrapper h3, #ski-pakkeliste-wrapper h4, #ski-pakkeliste-wrapper p, #ski-pakkeliste-wrapper input, #ski-pakkeliste-wrapper li {
+button, h2, h3, h4, p, input, li {
     font-family: 'Raleway';
     color: white;
 }
 
-#ski-pakkeliste-wrapper h1 {
+h1 {
     font-family: 'Pacifico';
     color: white;
 }

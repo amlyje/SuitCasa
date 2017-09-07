@@ -1,6 +1,4 @@
-<?php include 'inc/head.inc.php'; ?>
-<!--Indsat i head<link rel="stylesheet" href="css/ski-style.css">-->
-<!--Indsat i head<link rel="stylesheet" href="css/ski-style-mq.css">-->
+
 
 <div id="ski-pakkeliste-wrapper">
   <header>
@@ -106,6 +104,3 @@
       <section class="background_ski"></section>
   </section>
 </div>
-
-<?php include 'inc/footer.inc.php'; ?>
-<!--Indsat i footer.inc<script src="js/ski-script.js"></script>-->

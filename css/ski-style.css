@@ -24,14 +24,19 @@ Defaults
 #ski-pakkeliste-wrapper header {
     text-align: right;
     padding: 10px 20px 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #ski-pakkeliste-wrapper .back {
   text-decoration: none;
   color: white;
   font-family: 'Raleway';
+  -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
@@ -49,6 +54,7 @@ Defaults
     border-radius: 175px;
     border: 1px solid white;
     background-color: white;
+    -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 
@@ -71,15 +77,27 @@ INSPIRATIONAL - SKI - CARSTEN
 }
 
 .ca-full-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-bottom: 100px;
 }
 
 .col-1, .col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .col-1 {
@@ -108,18 +126,22 @@ INSPIRATIONAL - SKI - CARSTEN
 }
 
 #todo, #todo2, #todo3, #todo4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   margin-bottom: 30px;
-  font-family: 'Raleway';
-
 }
 
 .shadow {
   -webkit-box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.75);
 }
 
@@ -128,11 +150,18 @@ INSPIRATIONAL - SKI - CARSTEN
 }
 
 .panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: rgba(255, 255, 255, 0.40);
   padding: 20px 27px 20px 20px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: -10px;
 }
 
@@ -162,17 +191,27 @@ INSPIRATIONAL - SKI - CARSTEN
 }
 
 .ca-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .ca-list li {
   background-color: rgba(220,220,220,0.6);
   padding: 12px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 1px 0;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black;
+  -webkit-transition: background-color .5s ease;
   transition: background-color .5s ease;
 }
 
@@ -197,8 +236,10 @@ INSPIRATIONAL - SKI - CARSTEN
 }
 
 .ca-delete_all, .ca-delete {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   margin-right: 12px;
+  -webkit-transition: all .4s ease;
   transition: all .4s ease;
   opacity: 0.5;
   position: absolute;
@@ -212,14 +253,15 @@ INSPIRATIONAL - SKI - CARSTEN
 
 .ca-checkbox {
   margin-left: 13px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
 .ca-checkbox:hover {
   cursor:pointer;
   -webkit-box-shadow: inset 0px 0px 39px -20px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 0px 39px -20px rgba(0,0,0,0.75);
   box-shadow: inset 0px 0px 39px -20px rgba(0,0,0,0.75);
 }
 
@@ -241,10 +283,14 @@ section.background_ski {
 }
 
 .ca-list .list-enter-active, .ca-list .list-leave-active {
+  -webkit-transition: opacity .4s, background-color .2s, -webkit-transform .4s !important;
+  transition: opacity .4s, background-color .2s, -webkit-transform .4s !important;
   transition: opacity .4s, transform .4s, background-color .2s !important;
+  transition: opacity .4s, transform .4s, background-color .2s, -webkit-transform .4s !important;
 }
 .ca-list .list-enter, .ca-list .list-leave-to, .ca-list .list-leave-active  /* .list-leave-active below version 2.1.8 */ {
   opacity: 0 !important;
-  transform: translateX(10px) !important;
+  -webkit-transform: translateX(10px) !important;
+          transform: translateX(10px) !important;
   background-color: rgba(255,0,0,.8) !important;
 }

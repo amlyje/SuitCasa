@@ -1,10 +1,10 @@
 <?php include 'inc/head.inc.php'; ?>
-<link rel="stylesheet" href="css/style.css"> <!-- forside, login og signup -->
+<!--<link rel="stylesheet" href="css/style.css"> forside, login og signup -->
 
 <!-- FORSLAG TIL MERE -->
 <!-- 1. Autocomplete -->
 <!-- 2. Add new list -->
-
+<!--
 <header>
     <a href="index.php" class="back"></a>
     <div class="login_buttons">
@@ -12,7 +12,6 @@
         <a href="sign-up.php"><button type="button" name="Sign-up">Sign up</button></a>
     </div>
 </header>
-
 <a href="index.php"><h1 class="fp">SuitCasa</h1></a>
 <section class="intro">
     <p>Get inspiration for your next travel packing list and create, save and share your own.</p>
@@ -29,6 +28,11 @@
     </div>
 </section>
 <section class="background"></section>
+-->
+
+<?php  include 'createnew.php' ?>
+<?php  include 'skiing.php' ?>
+
 
 
 <script src="js/frontpage.js" charset="utf-8"></script>

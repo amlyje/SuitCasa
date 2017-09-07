@@ -33,6 +33,7 @@
 <?php  include 'createnew.php' ?>
 <?php  include 'skiing.php' ?>
 <?php  include 'charter.php' ?>
+<?php  include 'cityHoliday.php' ?>
 
 
 

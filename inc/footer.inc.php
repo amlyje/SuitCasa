@@ -3,5 +3,6 @@
 <script src="js/ski-script.js"></script>
 <script src="js/createnew.js"></script>
 <script src="js/charter-checklist.js"></script>
+<script src="js/cityScript.js"></script>
 </body>
 </html>

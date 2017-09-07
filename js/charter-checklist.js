@@ -1,18 +1,19 @@
 Vue.component('list-items', {
   template: '\
     <li>\
-    <input type="checkbox" class="checkbox" v-model="this.checked">\
+    <input type="checkbox" class="charter-checkbox">\
     <label for="checkbox" class="label"></label>\
       {{ title }}\
       <button v-on:click="$emit(\'remove\')" class="delete">X</button>\
     </li>\
   ',
   props: ['title']
+
 })
 
 
 new Vue({
-  el: '#pakkeliste',
+  el: '#charter-pakkeliste',
   data: {
 
     checklist:'Important',
@@ -25,8 +26,8 @@ new Vue({
     newDiverseText: '',
 
     checks: [
-      { title: 'Passport',},
-      { title: 'Tickets',},
+      { title: 'Passport', checked: false,},
+      { title: 'Tickets', checked: false,},
       { title: 'Visa (if applicable)',},
       { title: 'Wallet',},
       { title: 'Vaccination doc.',},
@@ -47,7 +48,7 @@ new Vue({
       {  title: 'Shirts',},
       {  title: 'Underwear',},
       {  title: 'Jeans',},
-      {  title: 'sweatshirts',},
+      {  title: 'Sweatshirts',},
       {  title: 'Pyjamas'},
       {  title: 'Socks'}
     ],
@@ -111,15 +112,24 @@ new Vue({
     print: function () {
         window.print();
     },
+
+    check() {
+        checks.checked = !checks.checked;
+    },
   }
 })
 
 new Vue({
-  el: '#header',
+  el: '#charter-header',
+
 
 methods: {
     print: function () {
       window.print();
   },
+    greet: function (event) {
+      // `this` inside methods point to the Vue instance
+      alert('This function is unfortunately not available yet')
+    }
 }
 })

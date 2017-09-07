@@ -6,39 +6,54 @@
 Defaults
 /////////////////////////////////////////*/
 
-
-html {
-    background-color: black;
-}
-
-button, h2, h3, h4, p, input, li {
+#landing-screen button, #landing-screen h2, #landing-screen h3, #landing-screen h4, #landing-screen p, #landing-screen input, #landing-screen li {
     font-family: 'Raleway';
     color: white;
 }
 
-h1 {
+#landing-screen h1 {
     font-family: 'Pacifico';
     color: white;
 }
 
-button:focus, input:focus {
+#landing-screen button:focus, #landing-screen input:focus {
     outline: none;
 }
 
-a {
+#landing-screen a {
   cursor: pointer;
   text-decoration: none;
 }
 
-body {
-  overflow-x: hidden;
+/*///////////////////////////////////////
+Screen change setup
+/////////////////////////////////////////*/
+
+#landing-screen {
+  display: block;
+}
+
+#section-wrapper { /* Sørens "create new list */
+  display: none;
+}
+
+#ski-pakkeliste-wrapper { /* Carstens ski-inspirations liste */
+  display: none;
+}
+
+#charter-body { /* Amandas charterferie-inspirations liste */
+  display: none;
+}
+
+#cityHoliday { /* Amalies storby-inspirations liste */
+  display: none;
 }
 
 /*///////////////////////////////////////
 Front Page
 /////////////////////////////////////////*/
 
-header {
+#landing-screen header {
     text-align: right;
     padding: 10px 20px 10px 10px;
     display: -webkit-box;
@@ -49,7 +64,7 @@ header {
             justify-content: space-between;
 }
 
-.back {
+#landing-screen .back {
   text-decoration: none;
   color: white;
   font-family: 'Raleway';
@@ -57,13 +72,13 @@ header {
   transition: all 1s ease;
 }
 
-.back:hover {
+#landing-screen .back:hover {
   cursor: pointer;
   margin-left: 2px;
   text-decoration: underline;
 }
 
-header button {
+#landing-screen header button {
     color: black;
     padding: 5px;
     font-size: 0.8em;
@@ -75,14 +90,14 @@ header button {
     transition: color 0.3s ease;
 }
 
-header button:hover {
+#landing-screen header button:hover {
     cursor: pointer;
     background-color: transparent;
     color: white;
     border: solid 1px white;
 }
 
-section.background {
+#landing-screen section.background {
     background-image: url("../img/baggrund.jpeg");
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,5 +1,3 @@
-<?php include 'inc/head.inc.php'; ?>
-    <link rel="stylesheet" href="css/charter.css">
   <section id="charter-body">
     <article id="charter-header">
       <h1>SuitCasa Charter Travel</h1>
@@ -109,9 +107,4 @@
     </transition>
   </article>
 </main>
-    <?php include 'inc/footer.inc.php'; ?>
-    <script src="js/charter-checklist.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/color-js@1.0.3"></script>
   </section>
-</html>

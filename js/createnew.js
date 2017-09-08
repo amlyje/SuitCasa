@@ -65,7 +65,7 @@ new Vue({
       document.getElementById("section-wrapper").style.display="none";
       document.getElementById("landing-screen").style.display="block";
       document.getElementById("landing-screen").className="animationIn";
-      document.getElementById("section-wrapper").className="animationOut";
+      document.getElementById("section-wrapper").className="section-wrapper animationOut";
     },
   },
 });

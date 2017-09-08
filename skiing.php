@@ -3,10 +3,6 @@
 <div id="ski-pakkeliste-wrapper" class="ski-pakkeliste-wrapper">
   <header>
       <a href="#" class="back" v-on:click="display_landingPage">Back to Frontpage</a>
-      <div class="login_buttons">
-          <a href="#"><button type="button" name="Login">Login</button></a>
-          <a href="#"><button type="button" name="Sign-up">Sign up</button></a>
-      </div>
   </header>
 
 

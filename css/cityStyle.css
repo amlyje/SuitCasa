@@ -184,6 +184,7 @@
 .cityButtons:hover {
 	transition: background-color 0.5s ease;
 	background-color: #666;
+	cursor: pointer;
 }
 .cityButtons:hover i {
 	display: none;

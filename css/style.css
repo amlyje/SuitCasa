@@ -31,25 +31,44 @@ Screen change setup
 
 #landing-screen {
   opacity: 1;
-  position:
+  position: absolute;
+  width: 100vw;
+  z-index: 999999;
 }
 
-#section-wrapper { /* Sørens "create new list */
+#section-wrapper, #ski-pakkeliste-wrapper, #charter-body, #cityHoliday {
+  position: absolute;
   opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
 }
 
-#ski-pakkeliste-wrapper { /* Carstens ski-inspirations liste */
-  display: none;
+.animationOut {
+  animation: animationOut 1s;
+  animation-fill-mode: forwards;
+  z-index: 0;
 }
 
-#charter-body { /* Amandas charterferie-inspirations liste */
-  display: none;
+.animationIn {
+  animation: animationIn 1s;
+  animation-fill-mode: forwards;
+  z-index: 99999;
 }
 
-#cityHoliday { /* Amalies storby-inspirations liste */
-  display: none;
+@keyframes animationIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
+@keyframes animationOut {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 
 /*///////////////////////////////////////
@@ -198,4 +217,13 @@ Login
 .login button:hover, .sign-up button:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.frontpage-buttons {
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from {margin-left: -1000px;}
+  to   {margin-left: 0;}
 }

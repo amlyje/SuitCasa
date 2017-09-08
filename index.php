@@ -8,8 +8,8 @@
           <a href="#"><button type="button" name="Sign-up">Sign up</button></a>
       </div>
   </header>
-  <a href="index.php"><h1 class="fp">SuitCasa</h1></a>
-  <section class="intro">
+  <a href="index.php"><h1 class="fp animated jackInTheBox">SuitCasa</h1></a>
+  <section class="intro animated zoomIn">
       <p>Get inspiration for your next travel packing list and create, save and share your own.</p>
   </section>
   <section class="frontpage-buttons">

@@ -2,7 +2,6 @@
   background-color: #f2f2f2;
   font-family: 'raleway';
   font-weight: 200;
-  margin: -30px;
   padding: 0;  }
 
 #charter-body h1, #charter-body h2 {
@@ -129,20 +128,16 @@ to   { opacity: 0.8; }
   display: flex;
   position: relative;
   z-index: 0;
-  animation: charter-fadein 2s;
-  -webkit-animation: charter-fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: charter-fadein 2s; /* Firefox < 16 */
-  -ms-animation: charter-fadein 2s; /* Internet Explorer */
-  -o-animation: charter-fadein 2s; /* Opera < 12.1 */
 }
 
 .charter-list-elements li:hover {
   background-color: rgba(220, 220, 220, 0.1);
   border: solid 1px rgba(220, 220, 220, 0.3);
   padding: 15px;
-  margin-left: -5px;}
+  margin-left: -5px;
+  width: 90%;}
 
-  .charter-list-elements ul {
+.charter-list-elements ul {
     padding: 0;
   }
 
@@ -192,14 +187,12 @@ input.charter-headings {
 }
 
 #charter-pakkeliste .list-enter-active, #charter-pakkeliste .list-leave-active {
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 #charter-pakkeliste .list-enter, #charter-pakkeliste .list-leave-to /* .list-leave-active below version 2.1.8 */ {
   opacity: 0;
   transform: translateX(5px);
 }
-
-
 
 @media print {
   header, nav, footer {

@@ -224,6 +224,6 @@ Login
 }
 
 @keyframes slideDown {
-  from {margin-left: -1000px;}
+  from {margin-left: -130vw;}
   to   {margin-left: 0;}
 }

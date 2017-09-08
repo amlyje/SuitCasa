@@ -1,8 +1,8 @@
-  <section id="charter-body">
+  <section id="charter-body" class="charter-body">
     <article id="charter-header">
       <h1>SuitCasa Charter Travel</h1>
       <nav id="charter-nav">
-        <a href="index.php"><img src="img/back.png"><p>Back</p></a>
+        <a href="#" v-on:click="display_landingPage"><img src="img/back.png"><p>Back</p></a>
       <article id="charter-menu">
         <figure v-on:click="greet"><img src="img/plus.png"><p>Save</p></figure>
         <figure v-on:click="print"><img src="img/print.png"><p>Print</p></figure>

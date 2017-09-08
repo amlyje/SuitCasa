@@ -1,9 +1,13 @@
-<section id="section-wrapper">
+<section id="section-wrapper" class="section-wrapper">
   <figure>
     <span>
       SuitCasa
     </span>
   </figure>
+
+  <header>
+    <a href="#" v-on:click="display_landingPage" class="back">Back to Frontpage</a>
+  </header>
 
   <section id="travel-list">
     <!-- Tilføj ny liste -->

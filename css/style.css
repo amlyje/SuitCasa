@@ -30,11 +30,11 @@ Screen change setup
 /////////////////////////////////////////*/
 
 #landing-screen {
-  display: block;
+  opacity: 1;
 }
 
 #section-wrapper { /* Sørens "create new list */
-  display: none;
+  opacity: 0;
 }
 
 #ski-pakkeliste-wrapper { /* Carstens ski-inspirations liste */
@@ -48,6 +48,29 @@ Screen change setup
 #cityHoliday { /* Amalies storby-inspirations liste */
   display: none;
 }
+
+.animationIn {
+  animation:         animationIn 3s; /* IE 10+, Fx 29+ */
+  animation-fill-mode: forwards;
+}
+
+.animationOut {
+  animation:         animationOut 3s; /* IE 10+, Fx 29+ */
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes animationOut {
+  0%   { margin-top: 0; opacity: 1;}
+  100% { margin-top: -100vh; opacity: 0;}
+}
+
+@keyframes animationIn {
+  0%   { margin-bottom: -100vh; opacity: 0;}
+  100% { margin-top: 0; opacity: 1;}
+}
+
+
 
 /*///////////////////////////////////////
 Front Page
@@ -188,35 +211,9 @@ h1.fp:hover {
 .show {display:block;}
 
 /*///////////////////////////////////
-Login page
+Login
 ///////////////////////////////////*/
 
-.login, .sign-up {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 20%;
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
-.login input, .sign-up input {
-  border: none;
-  padding: 10px;
-  margin: 5px 0;
-  color: black;
-}
-
-.login button, .sign-up button {
-  color: black;
-  border: none;
-  padding: 10px;
-  margin: 10px 0;
-}
 
 .login button:hover, .sign-up button:hover {
   cursor: pointer;

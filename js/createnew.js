@@ -41,7 +41,7 @@ Vue.component('list-component', {
 
 new Vue({
   //el = element, hvori koden indsættet (#travel-list)
-  el: '#travel-list',
+  el: '#section-wrapper',
   data: {
     addNewList: '',
     //Array med headlines
@@ -60,6 +60,12 @@ new Vue({
     //Fjern headline
     removePackageList: function(index) {
       this.headlines.splice(index, 1);
+    },
+    display_landingPage: function () {
+      document.getElementById("section-wrapper").style.display="none";
+      document.getElementById("landing-screen").style.display="block";
+      document.getElementById("landing-screen").className="animationIn";
+      document.getElementById("section-wrapper").className="animationOut";
     },
   },
 });

@@ -16,7 +16,7 @@ Vue.component('citymodal', {
 
 new Vue({
 
-	el: '#cityPackingList',
+	el: '#cityHoliday',
 
 	data: {
 		cityTitle: 'My City Holiday',
@@ -36,84 +36,84 @@ new Vue({
 		newCityAccessories:'',
 		newCityToiletries:'',
 		newCityOther:'',
-		
+
 		cityPreparations: [
-			{text: "Check passport", checked: false}, 
-			{text: "Check-in", checked: false}, 
-			{text: "Check flight info", checked: false}, 
-			{text: "Check baggage weight", checked: false}, 
-			{text: "Personalize luggage", checked: false}, 
-			{text: "Change money", checked: false},		  
+			{text: "Check passport", checked: false},
+			{text: "Check-in", checked: false},
+			{text: "Check flight info", checked: false},
+			{text: "Check baggage weight", checked: false},
+			{text: "Personalize luggage", checked: false},
+			{text: "Change money", checked: false},
 		],
-		
+
 		cityBasics: [
-			{text: "Passport", checked: false}, 
-			{text: "Wallet", checked: false}, 
+			{text: "Passport", checked: false},
+			{text: "Wallet", checked: false},
 			{text: "Travel documents", checked: false},
-			{text: "Medicine", checked: false}, 
+			{text: "Medicine", checked: false},
 			{text: "Notebook", checked: false},
-			{text: "Pen", checked: false}, 
-			{text: "Gum", checked: false}, 
+			{text: "Pen", checked: false},
+			{text: "Gum", checked: false},
 			{text: "Book", checked: false},
 			{text: "Magazine", checked: false},
 			{text: "Umbrella", checked: false},
-			{text: "Totebag", checked: false}, 
+			{text: "Totebag", checked: false},
 		],
-		
+
 		cityElectronics: [
-			{text: "Computer", checked: false}, 
-			{text: "+ charger", checked: false}, 
-			{text: "Phone", checked: false}, 
-			{text: "+ charger", checked: false}, 
-			{text: "Headphones", checked: false}, 
+			{text: "Computer", checked: false},
+			{text: "+ charger", checked: false},
+			{text: "Phone", checked: false},
+			{text: "+ charger", checked: false},
+			{text: "Headphones", checked: false},
 			{text: "Powerbank", checked: false},
 			{text: "Camera", checked: false},
 			{text: "+ charger", checked: false},
 			{text: "Converter", checked: false}
 		],
-		
+
 		cityClothes: [
-			{text: "Underwear", checked: false}, 
-			{text: "Socks", checked: false}, 
-			{text: "T-shirts", checked: false}, 
+			{text: "Underwear", checked: false},
+			{text: "Socks", checked: false},
+			{text: "T-shirts", checked: false},
 			{text: "Shirts", checked: false},
 			{text: "Jeans", checked: false},
 			{text: "Cardigans", checked: false},
 			{text: "Jacket", checked: false},
 		],
-		
+
 		cityShoes: [
-			{text: "Sneakers", checked: false}, 
+			{text: "Sneakers", checked: false},
 			{text: "Nice shoes", checked: false},
 		],
-		
+
 		cityAccessories: [
-			{text: "Belt", checked: false}, 
-			{text: "Scarf", checked: false}, 
-			{text: "Sunglasses", checked: false},  
+			{text: "Belt", checked: false},
+			{text: "Scarf", checked: false},
+			{text: "Sunglasses", checked: false},
 		],
-		
+
 		cityToiletries: [
-			{text: "Toothbrush", checked: false}, 
-			{text: "Toothpaste", checked: false}, 
-			{text: "Deodorant", checked: false},  
-			{text: "Perfume", checked: false}, 
-			{text: "Shampoo", checked: false}, 
+			{text: "Toothbrush", checked: false},
+			{text: "Toothpaste", checked: false},
+			{text: "Deodorant", checked: false},
+			{text: "Perfume", checked: false},
+			{text: "Shampoo", checked: false},
 			{text: "Bodywash", checked: false},
 		],
-		
+
 		cityOthers:[
 		],
-		
+
 		showModalSave:false,
 		showModalShare:false,
-		
+
 	},
 
 
 	methods: {
 
-//Methods for Preperation		
+//Methods for Preperation
 	addCityPrep: function () {
 			var cityItem = this.newCityPrep.trim();
 			if (cityItem) {
@@ -130,8 +130,8 @@ new Vue({
 			this.cityPreparations.splice(index, 1);
 		},
 
-		
-//Methods for Bacic		
+
+//Methods for Bacic
 		addCityBasic: function () {
 			var cityItem = this.newCityBasic.trim();
 			if (cityItem) {
@@ -146,9 +146,9 @@ new Vue({
 		removeCityBasic: function (cityItem) {
 			var index = this.cityBasics.indexOf(cityItem);
 			this.cityBasics.splice(index, 1);
-		},		
-		
-//Methods for Electronics	
+		},
+
+//Methods for Electronics
 		addCityElectronic: function () {
 			var cityItem = this.newCityElectronic.trim();
 			if (cityItem) {
@@ -164,8 +164,8 @@ new Vue({
 			var index = this.cityElectronics.indexOf(cityItem);
 			this.cityElectronics.splice(index, 1);
 		},
-		
-//Methods for Clothes	
+
+//Methods for Clothes
 		addCityClothes: function () {
 			var cityItem = this.newCityClothes.trim();
 			if (cityItem) {
@@ -181,8 +181,8 @@ new Vue({
 			var index = this.cityClothes.indexOf(cityItem);
 			this.cityClothes.splice(index, 1);
 		},
-		
-//Methods for Shoes	
+
+//Methods for Shoes
 		addCityShoe: function () {
 			var cityItem = this.newCityShoes.trim();
 			if (cityItem) {
@@ -197,9 +197,9 @@ new Vue({
 		removeCityShoes: function (cityItem) {
 			var index = this.cityShoes.indexOf(cityItem);
 			this.cityShoes.splice(index, 1);
-		},		
-		
-//Methods for Accessories	
+		},
+
+//Methods for Accessories
 		addCityAccessories: function () {
 			var cityItem = this.newCityAccessories.trim();
 			if (cityItem) {
@@ -215,9 +215,9 @@ new Vue({
 			var index = this.cityAccessories.indexOf(cityItem);
 			this.cityAccessories.splice(index, 1);
 		},
-		
 
-//Methods for Toiletries	
+
+//Methods for Toiletries
 		addCityToiletries: function () {
 			var cityItem = this.newCityToiletries.trim();
 			if (cityItem) {
@@ -233,8 +233,8 @@ new Vue({
 			var index = this.cityToiletries.indexOf(cityItem);
 			this.cityToiletries.splice(index, 1);
 		},
-		
-//Methods for Other	
+
+//Methods for Other
 		addCityOther: function () {
 			var cityItem = this.newCityOther.trim();
 			if (cityItem) {
@@ -250,14 +250,14 @@ new Vue({
 			var index = this.cityOthers.indexOf(cityItem);
 			this.cityOthers.splice(index, 1);
 		},
-			
-		
+
+
 //End editing
 		endEditing: function () {
 			document.querySelector("input").blur();
 		},
 
-//A method for check. If the function is true it will return cityItem.checked = true, and .cityItemDone will be added to the li		
+//A method for check. If the function is true it will return cityItem.checked = true, and .cityItemDone will be added to the li
 		check: function (cityItem) {
 			cityItem.checked = true;
 		},
@@ -266,12 +266,15 @@ new Vue({
 			return cityItem.checked;
 		},
 
-// For the print button		
+// For the print button
 		print: function () {
 			window.print();
 	},
+  display_landingPage: function () {
+    document.getElementById("cityHoliday").style.display="none";
+    document.getElementById("landing-screen").style.display="block";
+    document.getElementById("landing-screen").className="animationIn";
+    document.getElementById("cityHoliday").className="animationOut";
+  },
 	}
 });
-
-
-

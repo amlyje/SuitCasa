@@ -126,10 +126,16 @@ new Vue({
 methods: {
     print: function () {
       window.print();
-  },
+    },
     greet: function (event) {
       // `this` inside methods point to the Vue instance
       alert('This function is unfortunately not available yet')
-    }
+    },
+    display_landingPage: function () {
+      document.getElementById("charter-body").style.display="none";
+      document.getElementById("landing-screen").style.display="block";
+      document.getElementById("landing-screen").className="animationIn";
+      document.getElementById("charter-body").className="animationOut";
+    },
 }
 })

@@ -1,7 +1,7 @@
 // JavaScript Document
 
 new Vue({
-  el: "#ski-pakkeliste",
+  el: "#ski-pakkeliste-wrapper",
   data: {
     newTask_basics: "",
     newTask_documents: "",
@@ -114,6 +114,13 @@ new Vue({
         });
         this.newTask_clothes = "";
       }
+    },
+
+    display_landingPage: function () {
+      document.getElementById("ski-pakkeliste-wrapper").style.display="none";
+      document.getElementById("landing-screen").style.display="block";
+      document.getElementById("landing-screen").className="animationIn";
+      document.getElementById("ski-pakkeliste-wrapper").className="animationOut";
     },
 
     //removeTasks

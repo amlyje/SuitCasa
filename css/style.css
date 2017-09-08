@@ -31,6 +31,7 @@ Screen change setup
 
 #landing-screen {
   opacity: 1;
+  position:
 }
 
 #section-wrapper { /* Sørens "create new list */
@@ -47,27 +48,6 @@ Screen change setup
 
 #cityHoliday { /* Amalies storby-inspirations liste */
   display: none;
-}
-
-.animationIn {
-  animation:         animationIn 3s; /* IE 10+, Fx 29+ */
-  animation-fill-mode: forwards;
-}
-
-.animationOut {
-  animation:         animationOut 3s; /* IE 10+, Fx 29+ */
-  animation-fill-mode: forwards;
-
-}
-
-@keyframes animationOut {
-  0%   { margin-top: 0; opacity: 1;}
-  100% { margin-top: -100vh; opacity: 0;}
-}
-
-@keyframes animationIn {
-  0%   { margin-bottom: -100vh; opacity: 0;}
-  100% { margin-top: 0; opacity: 1;}
 }
 
 

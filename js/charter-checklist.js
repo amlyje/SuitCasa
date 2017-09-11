@@ -112,10 +112,6 @@ new Vue({
     print: function () {
         window.print();
     },
-
-    check() {
-        checks.checked = !checks.checked;
-    },
   }
 })
 

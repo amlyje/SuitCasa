@@ -27,8 +27,7 @@
           v-bind:key="check.title"
           v-bind:title="check.title"
           v-on:remove="checks.splice(index, 1)"
-          class="list-item"
-          v-model="check.checked"></li>
+          class="list-item"></li>
       </transition-group>
       </ul>
       <input
